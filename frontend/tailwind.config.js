@@ -1,5 +1,8 @@
+// Use import syntax instead of require
+import tailwindcssAnimate from 'tailwindcss-animate';
+
 /** @type {import('tailwindcss').Config} */
-const tailwindConfig = {
+export default {
   darkMode: ["class"],
   content: [
     './pages/**/*.{js,jsx}',
@@ -73,7 +76,5 @@ const tailwindConfig = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [tailwindcssAnimate],
 };
-
-export default tailwindConfig;
